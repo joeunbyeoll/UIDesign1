@@ -43,7 +43,7 @@ body {
   transform: 
   	translate(290px,274px) 
   	rotate(110deg);
-  	z-index :2;
+  	z-index :4;
 }
 
 #인형다리{
