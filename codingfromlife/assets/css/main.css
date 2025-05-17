@@ -1,0 +1,352 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+}
+
+#인형{
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 150px solid #FFD966;
+	border-radius: 20%;
+	position: absolute;
+	box-shadow: 
+		inset -6px 4px 10px rgba(255, 255, 255, 0.5); /* 부드러운 하이라이트 */
+	top: 200px;
+	left: 300px;
+
+}
+
+#인형배{
+	width: 80px;
+  height: 50px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 
+  	translate(290px,274px) 
+  	rotate(110deg);
+  	z-index :4;
+}
+
+#인형다리{
+	width: 40px;
+  height: 40px;
+  background: #F4F4F4;
+  border-radius: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 
+  	translate(288px,313px) 
+  	rotate(90deg);
+  	z-index :15;
+}
+
+#인형다리노랑{
+	width: 30px;
+  height: 60px;
+  background: #FFD966;
+  border-radius: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 
+  	translate(305px,307px) 
+  	rotate(90deg);
+  	z-index :2;
+}
+
+#인형머리{
+	width: 100px;
+	height: 100px;
+	background: #FFD966;
+	border-radius: 150px;
+	top: 300px;
+	left: 450px;
+	position: absolute;
+	box-shadow: 
+		inset 8px -8px 16px rgba(255, 180, 100, 0.4), /* 따뜻한 음영 */
+		inset -6px 4px 10px rgba(255, 255, 255, 0.5); /* 부드러운 하이라이트 */
+	top: 163px;
+	left: 305px;
+	z-index :20;
+}
+
+#인형꼬리{
+	width: 40px;
+  height: 40px;
+  background: #FFD966;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 
+  	translate(390px,310px) 
+  	rotate(90deg);
+  	z-index :15;
+}
+
+
+#인형코{
+	width: 40px;
+  height: 30px;
+  background: #F4F4F4;
+  border-radius: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: 
+  	translate(290px,203px) 
+  	rotate(90deg);
+  	z-index :15;
+}
+
+#신라면텍스트 {
+	color: black;
+	font-family: Hannari;
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 255px;
+	left: 435px;
+	font-size: 45px;
+	font-weight: bold;
+	z-index :28;
+}
+
+#신라면텍스트흰 {
+	color: white;
+	font-family: Hannari;
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 255px;
+	left: 435px;
+	font-size: 47px;
+	font-weight: bold;
+	z-index :25;
+}
+
+#신라면 {
+	width: 80px;
+	height: 100px;
+	background: red;
+  clip-path: polygon(
+    100% 100%,          /* 왼쪽 위 */
+    0% 100%,         /* 오른쪽 위 */
+    15% 0%,       /* 오른쪽 아래 */
+    85% 0%          /* 왼쪽 아래 */
+  );
+  box-shadow: 
+		inset -20px 0px 10px 0px #B30C09,
+    inset 20px 0 8px rgba(255, 255, 255, 0.4); 
+  transform: translate(420px,230px) rotate(180deg)
+}
+
+#신라면바닥 {
+ width: 60px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 
+		inset 10px 0px 10px 0px #B30C09;
+  transform: translate(432px,320px) 
+}
+
+#신라면뚜껑아래{
+ width: 85px;
+  height: 20px;
+  background: darkgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(417px,221px) 
+}
+
+#신라면뚜껑{
+	width: 85px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 20px 10px 6px 0px #darkred;
+  transform: translate(417px,218px) 
+}
+
+#apple {
+	width: 70px;
+	height: 70px;
+	background: tomato;
+	border-radius: 150px;
+	top: 300px;
+	left: 450px;
+	position: absolute;
+	box-shadow: 
+		inset 10px -10px 20px rgba(200, 255, 255, 0.3),
+		inset -10px 0 8px rgba(255, 255, 255, 0.3); 
+}
+
+#포카리원탑 {
+  width: 60px;
+  height: 20px;
+  background: #CBCCCC;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 20px 10px 6px 0px #636262;
+  transform: translate(540px,169px) 
+}
+
+#포카리원탑2 {
+  width: 60px;
+  height: 20px;
+  background: lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 
+  	inset 5px 4px 0px 0px #9D9D9E,
+  	inset -30px 0 8px rgba(255, 255, 255, 0.8); 
+
+  transform: translate(540px,163px) 
+}
+
+#포카리원 {
+  width: 60px;
+  height: 30px;
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 
+  	inset 15px 0px 6px 0px #262381,
+		inset -4px 0 8px rgba(255, 255, 255, 0.4);
+  transform: translate(540px,322px) 
+}
+
+#포카리스웨트 {
+	width: 60px;
+	height: 160px;
+	background: blue;
+	top:0;
+	left: 0;
+	box-shadow: 
+		inset 20px 0px 10px 0px #262381,
+    inset -10px 0 8px rgba(255, 255, 255, 0.4); 
+  transform: translate(540px,80px)
+}
+    
+
+#text-hangul {
+	text-transform: uppercase;
+	color:whitesmoke;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 195px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+}
+#text-hangul2 {
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 220px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#text-hangul3 {
+	text-transform: uppercase;
+	color: white;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 245px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+}
+  
+
+#text-hangul4 {
+	text-transform: uppercase;
+	color: white;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 272px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#text-hangul5 {
+	text-transform: uppercase;
+	color: white;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 297px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#text-hangul6 {
+	text-transform: uppercase;
+	color: white;
+	font-family: helvetica;
+	transform: rotate(90deg);
+	width: 0px;
+	transform-origin: top left;
+	position: absolute;
+	top: 321px;
+	left: 580px;
+	font-size: 25px;
+	font-weight: bold;
+	z-index :2;
+}
+
+
