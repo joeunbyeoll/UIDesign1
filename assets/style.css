@@ -1,9 +1,214 @@
+@font-face {
+  font-family: 'Andika';
+  src: url('../fonts/Andika-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body{
 	background-color: lightblue;
 	color: darkblue;
-    font-family: Avenir Next, sans-serif;
-	}
+  font-family: 'Andika', sans-serif;
+  overflow: hidden;
+  
+}
+	
+.dashed {
+  color: darkblue;          
+  text-decoration: none;     /* 기본 밑줄 제거 */
+  border-bottom: 2px dashed darkblue;   /* ← 점선 밑줄 */
+  padding-bottom: 1px;       /* 글자와 선 간격 살짝 */
+  text-shadow:
+    0 0 5px  #ff99cc,
+    0 0 10px #ff80bf,
+}
 
- h1{
- 	font-size: 150%;}
+
+ol.emoji-list {
+  list-style: none;
+  counter-reset: item;
+}
+
+.emoji-list li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2em;
+}
+
+.emoji-list li::before {
+  content: "🍡 ";
+  position: absolute;
+  left: 0;
+}
+
+h1{
+ font-size: 200%;
+ text-shadow:
+    0 0 5px #ffb3d9,
+    0 0 10px #ffb3d9,
+    0 0 20px #ff99cc,
+    0 0 40px #ff80bf;
+}
+
+
+h3,h4{
+  font-size: 18px;
+}
+
+#grid{
+  padding:20px;
+}
+
+.two-column-layout{
+  display:grid;
+  grid-template-columns: 400px 1fr;
+  gap: 400px;
+  width: 100%; /* 부모 너비 꽉 채우기 */
+  min-height: 600px; /* 충분히 높게 */
+  align-items: start;
+}
+
+.two{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.hashtag-list{
+  list-style: none;
+  counter-reset: exercise;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.hashtag-list li {
+  
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 0.5em;
+  font-size: 16px;       /* 글자 크기 통일 */
+  line-height: 1.4em;    /* 줄 높이 통일 */
+  vertical-align: middle; /
+}
+
+.hashtag-list li::before {
+  content: "⟡" ;
+  position: absolute;
+  letter-spacing: 1em;
+  top: 50%;                  /* 부모 높이의 50% 위치 */
+  transform: translateY(-50%);
+  color: darkblue;
+  left: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 370px 1fr; /* 사진 영역 370px, 오른쪽 칼럼 나머지 */
+  gap: 20px;
+  align-items: start; 
+
+}
+
+
+.main-image {
+  width: 370px;
+  height: 500px;
+  background-image: url('img/sitseebuta.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.hover-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+  margin-top: 0em;
+}
+
+.hover-images.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hover-images img {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  align-self:flex-start ;
+  padding: 1em;            /* 안쪽 여백 조절 */
+  margin-top: 2em;;
+}
+
+.right-column .column.links {
+  width: 100%;             /* 너비 꽉 채우기 */
+}
+
+.right-column h3, .right-column h4 {
+  margin-top: 0;           /* 제목 위쪽 여백 제거 */
+  margin-bottom: 0.5em;    /* 제목 아래 여백 */
+  font-weight: 700;
+}
+
+.right-column ul {
+  padding-left: 1.2em;     /* 리스트 들여쓰기 */
+  margin-top: 0;           /* 리스트 위쪽 여백 없애기 */
+  margin-bottom: 1em;      /* 리스트 아래 여백 */
+}
+
+.neon-link {
+  position: relative;
+  color: darkblue;  
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.neon-link::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  color: #ff99cc; /* 네온 연분홍 */
+  text-shadow:
+     0 0 2px #ffb3d9,
+    0 0 5px #ff99cc,
+    0 0 10px #ff80bf,
+    0 0 20px #ff66b3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: -1; /* 뒤에 있게 */
+}
+
+/* 호버 시 네온이 서서히 나타남 */
+.neon-link:hover::after {
+  opacity: 0.6;
+}
+
+
+.corner-image {
+ position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 500px; /* 원하는 크기 */
+  width: auto;
+  z-index: 10;
+  pointer-events: none;
 
