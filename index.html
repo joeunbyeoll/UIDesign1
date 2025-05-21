@@ -1,44 +1,58 @@
-  
 <!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>joeunbyeoll</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
-
 <body>
-  <img width="450" src="assets/22.gif" alt="GIF 이미지">
-  
 
-  <div id="grid">
-    <div id="left-column" class="scroll">  
 
-      
-      <h1>Eunbyeol Jo</h1>  
-
-      <ul>
-        <li>My favorite food is Dango!🍡🍡
-        <li>My favorite song is Complicated by Avril Lavigne.
-        <li>My favorite character is ANPANMAN!!
-      </ul>
-
- <h3>Exercises</h3>
-      <ul>
-        <li><a href="ascii_town/exterior-eunbyeoljo.html">ASCII Town</a></li>
-        <li><a href="codingfromlife/index.html">Coding from my life</a></li>
-        <li><a href="myshelf/index.html">Code My Shelf</a></li>
-      </ul>
-
- <h4>Projects</h4>
-      <ul>
-        <li><a href="https://www.figma.com/proto/jobm3FIeZNuRN7B1CocDR8/p1-personal-utility?page-id=7%3A2057&node-id=7-14179&p=f&viewport=90%2C314%2C0.1&t=ZyhyNsydLf48qgnp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A14179_blank">p1:personal utility</a></li>
-        <li><a href="https://www.figma.com/proto/fpNxSUUnkqhszrP1fsi4q3/p1-personal-utility-presentation?page-id=0%3A1&node-id=1-2&p=f&viewport=25%2C355%2C0.05&t=pJoPgWQNLowlpYCr-1&scaling=contain&content-scaling=fixed">p1:personal utility presentation</a></li>
-
-      </ul>
+ <div id="grid" class="two-column-layout scroll">
+    <div class="one">
+      <div class="container">
+    <div class="main-image" id="mainImage"></div>
+    <div class="hover-images" id="hoverImages">
+      <img src="assets/img/facebuta.png" alt="img1"/>
+      <img src="assets/img/sitbuta.png" alt="img2"/>
+      <img src="assets/img/backface.png" alt="img3" />
     </div>
   </div>
+
+  <script src="script.js"></script>
+
+
+      <h1>ЁÜN BYёöL JÖ</h1> 
+      <ul class="hashtag-list">
+        <li>My favorite food is <span class="dashed">Dango</span>!🍡🍡</li>
+        <li>My favorite song is <span class="dashed">Complicated</span> by Avril Lavigne.</li>
+        <li>My favorite character is <span class="dashed">ANPANMAN</span>!!</li>
+      </ul>
+    </div>
+
+
+    <div class="right-column">
+    <div class="two">
+      <h3>Exercises</h3>
+      <ul class="hashtag-list">
+        <li><a href="ascii_town/exterior-eunbyeoljo.html" class="neon-link" data-text="ASCII Town">ASCII Town</a></li>
+        <li><a href="codingfromlife/index.html" class="neon-link" data-text="Coding from my life">Coding from my life</a></li>
+        <li><a href="myshelf/index.html" class="neon-link" data-text="Code My Shelf">Code My Shelf</a></li>
+      </ul>
+
+      <h4>Projects</h4>
+      <ul class="hashtag-list">
+        <li><a href="https://www.figma.com/proto/jobm3FIeZNuRN7B1CocDR8/p1-personal-utility?page-id=7%3A2057&node-id=7-14179&p=f&viewport=90%2C314%2C0.1&t=ZyhyNsydLf48qgnp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A14179_blank" class="neon-link" data-text= "p1:personal utility">P1:personal utility</a></li>
+        <li><a href="https://www.figma.com/proto/fpNxSUUnkqhszrP1fsi4q3/p1-personal-utility-presentation?page-id=0%3A1&node-id=1-2&p=f&viewport=25%2C355%2C0.05&t=pJoPgWQNLowlpYCr-1&scaling=contain&content-scaling=fixed" class="neon-link" data-text="p1:personal utility presentation">P1:personal utility presentation</a></li>
+      </ul>
+
+      <img src="assets/img/butas.png" class="corner-image" alt="corner image" />
+
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>
