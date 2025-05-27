@@ -207,8 +207,47 @@ h3,h4{
  position: fixed;
   bottom: 0;
   right: 0;
-  height: 500px; /* 원하는 크기 */
+  height: 480px; /* 원하는 크기 */
   width: auto;
   z-index: 10;
   pointer-events: none;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .neon-link {
+  color: #90caf9;
+}
+
+body.dark .dashed {
+  border-bottom: 2px dashed #90caf9;
+  color: #90caf9;
+}
+
+body.dark .hashtag-list li::before {
+  color: #90caf9;
+}
+
+body.dark h1 {
+  text-shadow:
+    0 0 5px #bb86fc,
+    0 0 10px #bb86fc,
+    0 0 20px #bb86fc;
+}
+
+
+body.dark .hover-images img {
+  border: 1px solid white;
+
+body.dark .neon-link::after {
+  color: #90caf9;  /* 하늘색 */
+  text-shadow:
+    0 0 2px #bbdefb,
+    0 0 5px #90caf9,
+    0 0 10px #64b5f6,
+    0 0 20px #42a5f5;
+}
 
