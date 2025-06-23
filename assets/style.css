@@ -251,3 +251,13 @@ body.dark .neon-link::after {
     0 0 20px #42a5f5;
 }
 
+.pdf-link {
+  text-decoration: none !important;
+  color: darkblue; /* 색상 동일하게 유지 */
+}
+
+body.dark .pdf-link {
+  color: #90caf9;
+}
+
+
